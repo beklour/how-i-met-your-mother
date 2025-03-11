@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>HIMYM - reglas: las teorias</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="../css/estilos.css" >
+  </head>
+  <body class="containerimg fs-5">
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light text-dark bg-custom fs-5"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HIMYM</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="../index.html">HOME</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PERSONAJES
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../personajes/index.html"
+                      >¿QUIÉNES SON?</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../personajes/relaciones.html"
+                      >RELACIONES</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  NOVIAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../novias/index.html"
+                      >LOS AMORES DE TED</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../novias/robin.html"
+                      >ROBIN</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  REGLAS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="index.html">¿REGLAS?</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="teorias.html">TEORÍAS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="brocode.html">THE BROCODE</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="playbook.html"
+                      >THE PLAYBOOK</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <a class="nav-item nav-link" href="../mother.html">LA MADRE</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  EL FINAL
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../final/index.html"
+                      >¿EL FINAL?</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../final/finalt.html"
+                      >FINAL ALTERNATIVO</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <a class="nav-item nav-link" href="../recepcion.html"
+                >RECEPCIÓN</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Título -->
+      <div class="container d-flex justify-content-center mt-5">
+        <img src="img/teorias.png" class="d-block w-50" alt="teorías" >
+      </div>
+    </header>
+
+    <main class="container justify-content-center">
+      <!-- primer cont -->
+      <div class="container text-center mt-5">
+        <!-- primer parrafo -->
+        <div class="row">
+          <div class="card w-100 bg-custom2 mb-3">
+            <div class="card-body">
+              <p class="card-text fs-5 fw-medium">
+                En la serie How I Met Your Mother, las teorías son conceptos
+                divertidos y a menudo absurdos que los personajes utilizan para
+                explicar el comportamiento humano y las relaciones.
+                Principalmente presentadas por Ted Mosby y Barney Stinson, estas
+                teorías ofrecen un enfoque humorístico y exagerado de
+                situaciones cotidianas. <br>A continuación te proponemos un pequeño juego para poner a prueba cuán fan obsesivo eres de la serie: Se te presentan todas las teorías y debes adivinar qué personaje fue el que la planteó. Al final puedes saber cuánto acertaste.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- primer parrafo -->
+
+        <!-- Contenedor de Alertas -->
+        <div class="sticky-top"><div id="alertContainer"></div></div>
+
+        <section id="cardsPreguntas">
+          <h2 class="text-center mb-4" >Todas las Teorías</h2>
+          <div class="row justify-content-center">
+
+          <!-- Cada card corresponde a un objeto de questions -->
+          <!-- Card 1: Teoría de las Aceitunas -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="0">
+            <div class="card-header bg-custom">Teoría de las Aceitunas</div>
+            <div class="card-body">
+              <p class="card-text">
+                Esta teoría sugiere que una pareja es compatible si uno de los
+                dos ama las aceitunas y el otro las odia. Se basa en la idea de
+                que los opuestos pueden complementarse y lograr un equilibrio,
+                usando a Marshall y Lily como ejemplo, ya que él recuerda que
+                Marshall “detestaba” las aceitunas mientras que a Lily le
+                encantaban
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 0)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 0)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 0)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 0)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 0)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- Card 2: Teoría de "Nada Bueno Pasa Después de las 2AM" -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="1">
+            <div class="card-header bg-custom">
+              Teoría de "Nada Bueno Pasa Después de las 2AM"
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Esta teoria sugiere que las decisiones tomadas después las 2 de
+                la mañana suelen ser erróneas. La teoría enfatiza que, a altas
+                horas de la noche, el cansacion y las emociones pueden nublar el
+                juicio.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 1)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 1)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 1)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 1)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 1)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+          <!-- Card 3: Teoría de la Autopista -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="2">
+            <div class="card-header bg-custom">Teoría de la Autopista</div>
+            <div class="card-body">
+              <p class="card-text">
+                Compara las relaciones con una autopista llena de salidas en
+                puntos clave: 6 horas, 4 días, 3 semanas, 7 meses, 1 año y
+                medio, 18 años y, finalmente, la muerte. Cada salida representa
+                una oportunidad para terminar la relación antes de comprometerse
+                más profundamente. La teoría sugiere que hay momentos críticos
+                donde las personas pueden decidir si continúan o no en una
+                relación.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 2)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 2)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 2)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 2)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 2)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+
+          <!-- Card 4: Teoría de la Escala Sexy-Loca -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="3">
+            <div class="card-header bg-custom">
+              Teoría de la Escala Sexy-Loca
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Propone que existe una correlación directa entre lo atractiva
+                que es una persona y su nivel de locura. Según la Teoría, una
+                persona puede ser tan loca como sea proporcional a lo sexy que
+                es; si una persona es más loca de lo que es atractiva, la
+                relación no es sostenible. Se utiliza como justificación para
+                evaluar parejas potenciales.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 3)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 3)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 3)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 3)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 3)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+
+          <!-- Card 5: Teoría de la Sirena -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="4">
+            <div class="card-header bg-custom">Teoría de la Sirena</div>
+            <div class="card-body">
+              <p class="card-text">
+                Postula que, con el tiempo, hombres y mujeres que inicialmente
+                no se atraen pueden desarrollar atracción debido a la proximidad
+                constante. Se basa en la idea de que los marineros, después de
+                mucho tiempo en el mar, comenzaban a ver a los manatíes como
+                sirenas. Se usa esta teoría para explicar cómo las relaciones
+                pueden cambiar con el tiempo.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 4)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 4)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 4)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 4)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 4)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- Card 6: Teoría del Cristal Roto -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="5">
+            <div class="card-header bg-custom">Teoría del Cristal Roto</div>
+            <div class="card-body">
+              <p class="card-text">
+                Sugiere que, en una relación, una vez que notas un defecto en tu
+                pareja, es difícil dejar de enfocarse en él, lo que puede llevar
+                al deterioro de la relación. Cuando alguien se fija en una
+                falla, esta comienza a ampliarse hasta que se convierte en un
+                problema insuperable.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 5)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 5)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 5)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 5)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 5)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- Card 7: Teoría del Doppelgänger -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="6">
+            <div class="card-header bg-custom">Teoría del Doppelgänger</div>
+            <div class="card-body">
+              <p class="card-text">
+                Según esta teoría, cada miembro del grupo tiene un doble en la
+                ciudad. Estos doppelgängers representan caminos alternativos o
+                deseos ocultos de los personajes, como la versión lesbiana de
+                Robin o la versión stripper de Lily. Su aparición simboliza
+                posibilidades de lo que podrían haber sido.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 6)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 6)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 6)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 6)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 6)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+ <!-- Card 8: Teoría del Continuo Cita-Tiempo -->
+
+ <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="7">
+            <div class="card-header bg-custom">
+              Teoría del Continuo Cita-Tiempo
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Sugiere que no se deben hacer planes con una pareja para un
+                período más largo del que se ha estado saliendo. Por ejemplo, si
+                has estado saliendo con alguien por tres meses, no deberías
+                planear unas vacaciones para dentro de seis meses, porque la
+                relación podría no durar tanto.
+              </p>
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 7)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 7)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 7)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 7)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 7)"
+                >
+                  Robin
+                </button>
+            </div>
+            </div>
+          </div> 
+</div>
+
+          <!-- Card 9: Teoría de los Ojos de Loca -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="8">
+            <div class="card-header bg-custom">Teoría de los Ojos de Loca</div>
+            <div class="card-body">
+              <p class="card-text">
+                Advierte que se puede identificar a una mujer potencialmente
+                problemática por una mirada particular en sus ojos a la que él
+                llama “ojos de loca”. Según él, esta es una señal clara de
+                peligro en una relación.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 8)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 8)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 8)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 8)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 8)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+
+          <!-- Card 10: Teoría de Dobler-Dahmer -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="9">
+            <div class="card-header bg-custom">Teoría de Dobler-Dahmer</div>
+            <div class="card-body">
+              <p class="card-text">
+                Toda declaración romántica puede ser vista como adorable o
+                aterradora dependiendo de los sentimientos de la otra persona.
+                Si a alguien le gustas, una gran declaración de amor será como
+                la de Lloyd Dobler en "Say Anything", pero si no, será
+                aterradora, como si un asesino en serie (Jeffrey Dahmer) la
+                estuviera haciendo.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 9)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 9)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 9)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 9)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 9)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+
+          <!-- Card 11: Teoría de la Mermelada -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="10">
+            <div class="card-header bg-custom">Teoría de la Mermelada</div>
+            <div class="card-body">
+              <p class="card-text">
+                Sugiere que cada persona en la vida de otra tiene
+                una“mermelada”, es decir, algo que necesita constantemente.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 10)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 10)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 10)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 10)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 10)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+          <!-- Card 12: Teoría de Ventana de Oportunidad -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="11">
+            <div class="card-header bg-custom">
+              Teoría de Ventana de Oportunidad
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Indica que existe un período de tiempo en el que una persona
+                tiene una oportunidad con alguien antes de que esta se cierre
+                para siempre.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 11)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 11)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 11)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 11)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 11)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+
+          <!-- Card 13: Teoría del Platino -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="12">
+            <div class="card-header bg-custom">Teoría del Platino</div>
+            <div class="card-body">
+              <p class="card-text">
+                Afirma que cuando un hombre alcanza cierto nivel de éxito con
+                las mujeres, ya no puede salir con una chica promedio. Se vuelve
+                platino y necesita un nivel de mujer superior. Por ejemplo, dice
+                que una vez que has salido con modelos, no puedes volver a salir
+                con alguien normal.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 12)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 12)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 12)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 12)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 12)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+
+          <!-- Card 14: Teoría del Blitz -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="13">
+            <div class="card-header bg-custom">Teoría del Blitz</div>
+            <div class="card-body">
+              <p class="card-text">
+                Plantea que algunas personas están malditas y se pierden los
+                mejores momentos porque se van antes de que ocurra algo
+                legendario. Se llama así por un amigo de la universidad de Ted y
+                Marshall.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 13)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 13)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 13)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 13)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 13)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+
+          <!-- Card 15: Teoría del Desfasaje Temporal -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="14">
+            <div class="card-header bg-custom">
+              Teoría del Desfasaje Temporal
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Sugiere que algunas relaciones no funcionan porque las dos
+                personas no están en la misma frecuencia temporal, es decir, uno
+                está listo para comprometerse y el otro no.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 14)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 14)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 14)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 14)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 14)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+
+          <!-- Card 16: Teoría del Tránsito de Nueva York -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="15">
+            <div class="card-header bg-custom">
+              Teoría del Tránsito de Nueva York
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Si alguien deja pasar el primer taxi en Nueva York, lo más
+                probable es que tenga que esperar mucho más para encontrar otro.
+                Lo mismo ocurre con las relaciones: si rechazas a alguien bueno,
+                puede que tardes mucho en encontrar a alguien igual de bueno.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 15)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 15)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 15)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 15)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 15)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- Card 17: Teoría de la Cadena de los Gritos -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="16">
+            <div class="card-header bg-custom">
+              Teoría de la Cadena de los Gritos
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Describe un ciclo en el que una persona que es reprendida por su
+                superior descarga su frustración en alguien de menor jerarquía,
+                creando una cadena de gritos que se transmite de uno a otro.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 16)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 16)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 16)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 16)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 16)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+
+          <!-- Card 18: Teoría del Efecto Animadora -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="17">
+            <div class="card-header bg-custom">Teoría del Efecto Animadora</div>
+            <div class="card-body">
+              <p class="card-text">
+                Sugiere que las personas parecen más atractivas cuando están en
+                grupo debido a una ilusión colectiva, similar a cómo las
+                animadoras se perciben más atractivas en conjunto. Esta teoría
+                ha superado la ficción y fue investigada por la psicología
+                social y se explicó a través de la "codificación en conjunto".
+                Cuando observamos un grupo, nuestro cerebro genera un promedio
+                de los rasgos faciales, produciendo un "rostro promedio" más
+                simétrico y, por ende, más atractivo que la suma de sus partes.
+                Diversos estudios han demostrado que los individuos se valoran
+                como más atractivos en grupo, ya que la mente suaviza las
+                imperfecciones al promediar rasgos, creando una imagen
+                idealizada; un hallazgo que ha tenido importantes implicaciones
+                en áreas como el marketing y la teoría social, al evidenciar
+                cómo el contexto y la agrupación pueden transformar radicalmente
+                nuestra percepción de la belleza.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 17)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 17)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 17)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 17)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 17)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- Card 19: Teoría del Ambicioso y Conformista -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="18">
+            <div class="card-header bg-custom">
+              Teoría del Ambicioso y Conformista
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Afirma que en toda pareja hay una persona ambiciosa, que cree
+                que podría estar con alguien mejor, y una conformista, que está
+                satisfecha con la relación tal como es.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 18)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 18)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 18)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 18)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 18)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+
+          <!-- Card 20: Teoría del Pato o Conejo -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="19">
+            <div class="card-header bg-custom">Teoría del Pato o Conejo</div>
+            <div class="card-body">
+              <p class="card-text">
+                Basada en una imagen que puede interpretarse como un pato o un
+                conejo, esta teoría sugiere que la percepción de una persona
+                puede cambiar con el tiempo, pasando de desagrado a atracción, o
+                viceversa.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 19)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 19)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 19)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 19)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 19)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- Card 21: Teoría del Anzuelo -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="20">
+            <div class="card-header bg-custom">Teoría del Anzuelo</div>
+            <div class="card-body">
+              <p class="card-text">
+                Describe la situación en la que una persona mantiene a otra
+                interesada y enganchada sin intención de comprometerse,
+                utilizando frases como “no puedo estar contigo... ahora mismo”
+                para mantener la esperanza.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 20)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 20)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 20)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 20)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 20)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+
+          <!-- Card 22: Teoría del Efecto Sepia -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="21">
+            <div class="card-header bg-custom">Teoría del Efecto Sepia</div>
+            <div class="card-body">
+              <p class="card-text">
+                Se sugiere que los recuerdos y las emociones del pasado tiñen la
+                percepción de las relaciones actuales, dándoles un tono
+                nostálgico y melancólico, similar al efecto sepia en fotografías
+                antiguas.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 21)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 21)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 21)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 21)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 21)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+
+          <!-- Card 23: Teoría de la Langosta -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="22">
+            <div class="card-header bg-custom">Teoría de la Langosta</div>
+            <div class="card-body">
+              <p class="card-text">
+                Sugiere que las personas desean más aquello que no pueden tener.
+                El personaje que la plantea se basa en que, al creer que la langosta le genera alergia y que no puede
+                comerla, siente un deseo creciente por probarla.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 22)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 22)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 22)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 22)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 22)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <!-- Card 24: Teoría de los Regalos de los Exs -->
+          <div class="col-12 col-sm-10 col-md-8 ">
+          <div class="card mb-3" data-index="23">
+            <div class="card-header bg-custom">
+              Teoría de los Regalos de los Exs
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Plantea que los regalos de los ex de tu pareja te recuerdan a
+                ellos, lo que puede afectar la relación actual al traer a
+                colación el pasado.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 23)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 23)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 23)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 23)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 23)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+</div>
+
+          <!-- Card 25: Teoría de la Prueba del Porche -->
+          <div class=" col-sm-10 col-md-8">
+          <div class="card mb-3" data-index="24">
+            <div class="card-header bg-custom">
+              Teoría de la Prueba del Porche
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Se utiliza esta prueba para evaluar si las parejas del grupo son
+                adecuadas.Consiste en imaginarse en el futuro sentado en un
+                pórtico (o porche) con esa persona. Si la imagen es agradable,
+                la relación tiene potencial; si no, es una señal de advertencia
+                de que la relación no funcionará a largo plazo.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Ted"
+                  onclick="checkStaticAnswer(event, 24)"
+                >
+                  Ted
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Marshall"
+                  onclick="checkStaticAnswer(event, 24)"
+                >
+                  Marshall
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Lily"
+                  onclick="checkStaticAnswer(event, 24)"
+                >
+                  Lily
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Barney"
+                  onclick="checkStaticAnswer(event, 24)"
+                >
+                  Barney
+                </button>
+                <button
+                  type="button"
+                  class="btn bg-custom"
+                  data-option="Robin"
+                  onclick="checkStaticAnswer(event, 24)"
+                >
+                  Robin
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+          
+          </div>
+        </section>
+        
+<!-- botones de terminar, reiniciar y resultados -->
+<div class="d-flex flex-column flex-md-row justify-content-around align-items-center m-5">
+  <button id="verResultados" class="btn bg-custom mb-3 mb-md-0">
+    Resultados
+  </button>
+  <div class="col-9 col-md-6 p-0">
+    <div class="card bg-custom2 mb-3">
+      <div class="card-body">
+        <p class="card-text resultado"></p>
+      </div>
+    </div>
+  </div>
+  <button id="reiniciar" class="btn bg-custom mb-3 mb-md-0">
+    Reiniciar
+  </button>
+</div>
+
+<!-- botones de terminar, reiniciar y resultados -->
+
+
+
+
+
+        <!-- Primera parte -->
+        <div class="row justify-content-center text-center mt-5">
+          <!-- Título Extra -->
+          <div class="col-12">
+            <p  class="fs-2 fw-bold">Extra!</p>
+          </div>
+          
+          <!-- Texto -->
+          <div class="col-12 mt-3">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/NLTmkYLI70k?si=y7QstDV8_gaFKUZj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="card card-body p-3 mx-auto">
+              <div class="card-header bg-custom ">Teoría de Lebenslangerschicksalsschatz </div>
+              <p class="card-text">
+                En la serie "How I Met Your Mother", el término alemán "Lebenslangerschicksalsschatz" se traduce como "tesoro del destino para toda la vida". Este concepto es introducido en el episodio "The Lighthouse" de la novena temporada, donde Klaus, el exnovio alemán de Victoria, explica a Ted que en su idioma existe una palabra para describir a la persona que está destinada a ser tu compañero de por vida. Esta idea representa un amor profundo y predestinado, aquel que trasciende el tiempo y las circunstancias.<br>
+                Klaus contrasta este término con "Beinaheleidenschaftsgegenstand", que significa "casi lo que deseas", refiriéndose a una relación que es buena pero no es el amor verdadero. Esta distinción resalta la búsqueda de Ted Mosby por su "Lebenslangerschicksalsschatz", el amor perfecto que llena su vida de significado y propósito.<br>
+                La serie utiliza este concepto para explorar la idea de que el amor verdadero no es algo que se desarrolla con el tiempo, sino una conexión inmediata y profunda que transforma la vida de las personas. Esta perspectiva plantea preguntas sobre la naturaleza del amor y cómo reconocemos a nuestra alma gemela.<br>
+                Es en la estación de tren de Farhampton donde esta noción cobra vida para Ted. Después de años de búsqueda, desilusiones y crecimiento personal, Ted se encuentra en este lugar bajo la lluvia, un escenario que simboliza tanto el final de un viaje como el comienzo de otro. Allí, en medio de la multitud, sus ojos se cruzan con Tracy McConnell, la mujer que encarna su "Lebenslangerschicksalsschatz". Este encuentro no es solo el cumplimiento de una promesa narrativa, sino la culminación de una búsqueda existencial por el amor verdadero.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fin Primera parte -->
+      </div>
+    </main>
+
+    <footer class="container-fluid bg-custom mt-5">
+      <section class="container text-center pt-2 pb-2">
+        <div class="row align-items-center">
+          <div class="col-4 col-sm-2">
+            <a href="../contacto.html" class="btn btn-outline-dark btn-sm"
+              >CONTACTO</a
+            >
+          </div>
+          <div class="col-4 col-sm-2">
+            <a href="https://www.facebook.com/OfficialHowIMetYourMother/">
+              <img
+                src="../img/iconos/fb.png"
+                alt="facebook"
+                class="img-fluid"
+              >
+            </a>
+          </div>
+          <div class="col-4 col-sm-2">
+            <a
+              href="https://www.disneyplus.com/es-ar/series/how-i-met-your-mother/3kpBeRQiKjkq"
+            >
+              <img
+                src="../img/iconos/disney.png"
+                alt="disneyplus"
+                class="img-fluid"
+              >
+            </a>
+          </div>
+          <div class="col-4 col-sm-2">
+            <a href="https://www.netflix.com/title/70143824">
+              <img
+                src="../img/iconos/netflix.png"
+                alt="netflix"
+                class="img-fluid"
+              >
+            </a>
+          </div>
+          <div class="col-4 col-sm-2">
+            <a
+              href="https://www.primevideo.com/-/es/detail/How-I-met-your-mother/0HX4L62NMBMKP5QXU8QNR8958G"
+            >
+              <img
+                src="../img/iconos/prime.png"
+                alt="primevideo"
+                class="img-fluid"
+              >
+            </a>
+          </div>
+          <div class="col-4 col-sm-2">
+            <a href="../desarrolladora.html" class="btn btn-outline-dark btn-sm"
+              >SOBRE EL SITIO</a
+            >
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
