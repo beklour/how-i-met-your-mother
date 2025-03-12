@@ -17,12 +17,15 @@
 
 .containerimg {
   background-image: url(../img/fondo1.jpeg); /* Asegúrate de que la ruta sea correcta */
-  background-size: cover;
   background-position: center top;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   min-height: 100vh; /* Asegura que el contenedor ocupe al menos la altura de la ventana gráfica */
   width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la página */
 }
 .accordion-border-color { 
 border-color:#fcf300;
 };
+
+#tarjetitas{
+  width: 18rem;
+}
